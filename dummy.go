@@ -2,6 +2,8 @@ package gokvstores
 
 import "time"
 
+var _ KVStore = &DummyStore{}
+
 // DummyStore is a noop store (caching disabled).
 type DummyStore struct{}
 
